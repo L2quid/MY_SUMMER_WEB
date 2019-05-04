@@ -3,6 +3,11 @@
     padding: 0px;
 }
 
+::selection {
+    background-color: aquamarine;
+    color: pink;
+}
+
 body {
     background-color: rgba(255, 232, 199, 0.25);
 }
@@ -88,7 +93,7 @@ li:hover {
 
 div.box {
     margin: 40px 0px;
-
+    clear: both;
 }
 
 .special {
@@ -105,23 +110,23 @@ div.box {
 
 @keyframes chcolor {
     0% {
-        border-bottom: 2px dashed #E3CBFF;
+        border: 2px solid #E3CBFF;
     }
 
     25% {
-        border-bottom: 2px dashed #92C2E8;
+        border: 2px solid #92C2E8;
     }
 
     50% {
-        border-bottom: 2px dashed #A0F0C0;
+        border: 2px solid #A0F0C0;
     }
 
     75% {
-        border-bottom: 2px dashed rgb(248, 161, 174);
+        border: 2px solid rgb(248, 161, 174);
     }
 
     100% {
-        border-bottom: 2px dashed #E3CBFF;
+        border: 2px solid #E3CBFF;
     }
 }
 
@@ -166,4 +171,99 @@ div.box {
 img {
     height: 100%;
     position: absolute;
+}
+
+div.contact {
+    margin: 50px auto;
+    width: 1050px;
+    height: 700px;
+    background-color: rgb(122, 151, 167);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    padding: 20px 20px 20px;
+}
+
+.inbox {
+    width: 1030px;
+    height: 680px;
+    background-color: floralwhite;
+    padding: 10px;
+
+}
+
+.context {
+    color: rgb(238, 191, 194);
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 1);
+    font-size: 60px;
+    border-bottom: 2px solid rgb(238, 191, 194);
+    margin-bottom: 50px;
+    padding-left: 30px;
+}
+
+div.profile {
+    height: 300px;
+    text-align: center;
+    background-image: url(../res/profile.png);
+    background-size: 230px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 1s;
+}
+
+div.profile:hover {
+    transform: scale(1.2, 1.2);
+}
+
+p.me {
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.5;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.mewrap {
+    width: 400px;
+    height: 400px;
+    padding: 50px 0px;
+    border-right: 2px solid rgb(238, 191, 194);
+    float: left;
+}
+
+div.mailme {
+    float: left;
+    width: 550px;
+    height: 400px;
+    margin: 100px 0px 20px 30px;
+}
+
+p.additional {
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+p.left {
+    font-size: 22px;
+    width: 430px;
+    margin: 40px 20px;
+    display: inline-block;
+    float: left;
+}
+
+div.rightimg {
+    float: left;
+    background-image: url(../res/jack-hung-tr-1265649-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 600px;
+    height: 300px;
+    margin-left: 30px;
+}
+
+li.proj {
+    display: inline-block;
+    margin: 20px;
+}
+
+ul {
+    text-align: center;
 }

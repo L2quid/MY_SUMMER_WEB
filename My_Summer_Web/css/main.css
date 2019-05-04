@@ -5,6 +5,11 @@
     font-family: 'Song Myung', serif;
 }
 
+::selection {
+    background-color: pink;
+    color: rgb(253, 216, 188);
+}
+
 a {
     text-decoration: none;
     color: rgb(253, 216, 188);
