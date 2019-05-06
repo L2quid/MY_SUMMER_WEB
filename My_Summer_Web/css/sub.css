@@ -1,11 +1,12 @@
 * {
     margin: 0px;
     padding: 0px;
+
 }
 
 ::selection {
-    background-color: aquamarine;
-    color: pink;
+    background-color: rgb(215, 240, 239);
+    color: rgb(241, 103, 129);
 }
 
 body {
@@ -135,10 +136,15 @@ div.box {
     border-bottom: none;
 }
 
+.modal-wrap {
+    width: 300px;
+    margin: 30px;
+    float: left;
+}
+
 .content {
     width: 300px;
     height: 300px;
-    margin: 30px 30px;
     display: inline-block;
     float: left;
     font-size: 25px;
@@ -266,4 +272,88 @@ li.proj {
 
 ul {
     text-align: center;
+}
+
+[id^=modal] {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 000, 0.4);
+
+}
+
+input[type=checkbox] {
+    position: absolute;
+    clip: rect(0 0 0 0);
+}
+
+#modal1:target {
+    display: block;
+
+}
+
+#modal2:target {
+    display: block;
+}
+
+[id^=modal] a {
+    float: right;
+    margin: 10px 15px;
+}
+
+div.modal-content {
+    width: 1100px;
+    background-color: white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 900px;
+    min-height: 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+
+div.modal-close {
+    transform: scale(2, 2)rotate(45deg);
+    color: black;
+}
+
+a.close2 {
+    color: black;
+    font-size: 25px;
+    margin: 10px 50%;
+    float: left;
+}
+
+.modal-main {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.modal-main-text {
+    font-size: 45px;
+    font-family: 'Song Myung', serif;
+    border-bottom: 1px solid black;
+    padding: 0 0 15px 0;
+    margin-bottom: 50px;
+}
+
+.modal-sub-text {
+    color: black;
+    font-size: 21px;
+}
+
+div.img {
+    margin: 10px auto;
+    width: 95%;
+    height: 450px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
